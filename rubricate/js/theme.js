@@ -7,9 +7,9 @@
   const saved = localStorage.getItem(STORAGE_KEY) || 'light';
   root.setAttribute('data-theme', saved);
 
-  document.addEventListener('DOMContentLoaded', function () {
+  function bindThemeToggle() {
     const toggle = document.getElementById('themeToggle');
-    if (!toggle) return;
+    if (!toggle || toggle.dataset.bound === 'true') return;
 
     toggle.addEventListener('click', function () {
       const current = root.getAttribute('data-theme') || 'light';
@@ -17,5 +17,10 @@
       root.setAttribute('data-theme', next);
       localStorage.setItem(STORAGE_KEY, next);
     });
-  });
+
+    toggle.dataset.bound = 'true';
+  }
+
+  document.addEventListener('DOMContentLoaded', bindThemeToggle);
+  document.addEventListener('layout:loaded', bindThemeToggle);
 })();

@@ -14,21 +14,7 @@
 </head>
 <body>
 
-<nav id="nav">
-  <a href="index.html" class="nav-logo">
-    <span class="nav-logo-mark">R</span>
-    Rubricate
-  </a>
-  <ul class="nav-links">
-    <li><a href="for-experts.html">For Experts</a></li>
-    <li><a href="for-businesses.html">For Businesses</a></li>
-  </ul>
-  <div style="display:flex; gap:12px;" class="nav-cta">
-    <a href="for-experts.html" class="btn btn-ghost">Apply as Expert</a>
-    <a href="for-businesses.html" class="btn btn-primary">Hire Experts</a>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
-  </div>
-</nav>
+<div id="site-header"></div>
 
 <!-- ── HERO ── -->
 <div class="page-hero">
@@ -186,7 +172,7 @@
             <div class="journey-callout-text">Rates vary by domain and task complexity. Specialized expert work typically starts at $40/hr and goes to $90+/hr.</div>
           </div>
           <div style="text-align:center; margin-top:8px;">
-            <a href="for-experts.html#apply" class="btn btn-primary btn-lg">Apply as Expert</a>
+            <a href="https://app.rubricate.net/talent/sign_in" class="btn btn-primary btn-lg">Apply as Expert</a>
           </div>
         </div>
       </div>
@@ -317,30 +303,12 @@
     <div class="dual-cta-card reveal">
       <h3>Have expertise worth<br><em class="theme-grad">sharing</em>?</h3>
       <p>Join our network and start earning from the knowledge you've spent years building.</p>
-      <a href="for-experts.html" class="btn btn-ghost btn-lg">Apply as Expert →</a>
+      <a href="https://app.rubricate.net/talent/sign_in" class="btn btn-ghost btn-lg">Apply as Expert →</a>
     </div>
   </div>
 </div>
 
-<footer class="footer-compact">
-  <div class="footer-compact-row">
-    <a href="index.html" class="footer-compact-brand">
-      <span class="nav-logo-mark">R</span>
-      Rubricate
-    </a>
-
-    <div class="footer-compact-links">
-      <a href="#">Docs</a>
-      <a href="refund-policy.html">Refund Policy</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms-of-service.html">Terms of Service</a>
-    </div>
-
-    <a href="#" class="footer-compact-social" aria-label="Rubricate on LinkedIn">in</a>
-
-    <p class="footer-compact-copy">© 2026 Rubricate, Inc.</p>
-  </div>
-</footer>
+<div id="site-footer"></div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function switchTab(tab) {
@@ -361,6 +329,7 @@
   }, { threshold: 0.15 });
   reveals.forEach(el => observer.observe(el));
 </script>
+<script src="js/layout.js"></script>
 <script src="js/theme.js"></script>
 </body>
 </html>

@@ -921,7 +921,7 @@
   border-color: rgba(255, 255, 255, 0.3);
 }
 .theme-toggle::before {
-  content: "✦";
+  content: "☀";
   position: absolute;
   font-size: 18px;
   opacity: 1;
